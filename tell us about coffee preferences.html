@@ -5,6 +5,60 @@
     </head>
     <body>
         <h1>Tell us about your coffee habits</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="uname"> who are you? </label>
+                </td>
+                <td>
+                    <input type="text" id="uname" name="uname" required pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>what is your gender?</p>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label>Male</label>
+                    <br/>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label>Female</label>
+                    <br/>
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label>Other</label>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="decaf">Do you drink decaf?</label>
+                </td>
+                <td>
+                    <select id="decaf" name="decaf">
+                        <option value="decafpleb">Yes</option>
+                        <option value="caffeineaddict">No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="coffeesdrunk">How many coffees do you drink a day?:</label>
+                    <p>(0 to too many)</p>
+                </td>
+                <td>
+                    <input type="range" id="coffeesdrunk" name="coffeesdrunk" min="0" max="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+                <td>
+                    <input type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
         <a href="index.html">go back to the start</a>
     </body>
 </html>
