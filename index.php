@@ -14,6 +14,7 @@
             <select id="music" name="music">
                 <option value="wired">wired</option>
                 <option value="wireless">Wireless</option>
+            </br>
             <p><label for="manufacturer">Favourite manufacturer: </label><input type="text" id="manufacturer" name="manufacturer" /></p>
             <p><input type="submit" /></p>
         </form>
