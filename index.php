@@ -5,7 +5,7 @@
     </head>
     <body>
         <p>tell us about you mobile preferences</p>
-        <form action="response.php" method="GET">
+        <form action="response.php" method="POST">
             <p> what OS do you use?</p>
             <input type="radio" id="android" name="os" value="android"> <label for="android">Android</label>
             <input type="radio" id="ios" name="os" value="ios"> <label for="ios">ios</label>
