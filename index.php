@@ -4,6 +4,17 @@
         <title>lab 5: first php page</title>
     </head>
     <body>
-        <p><?= var_dump($_SERVER) ?></p>
+        <p>tell us about you mobile preferences</p>
+        <form action="response.php" method="GET">
+            <p> what OS do you use?</p>
+            <input type="radio" id="android" name="os" value="android"> <label for="android">Android</label>
+            <input type="radio" id="ios" name="os" value="ios"> <label for="ios">ios</label>
+
+            <p><label for="music">how do you listen to music?</label><br>
+            <select id="music" name="music">
+                <option value="wired">wired</option>
+                <option value="wireless">Wireless</option>
+            <p><input type="submit" /></p>
+        </form>
     </body>
 </html>
