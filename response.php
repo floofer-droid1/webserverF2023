@@ -4,7 +4,7 @@
         <title>php response</title>
     </head>
     <body>
-        <p><?= var_dump($_GET) ?></p>
-        <p><?= var_dump($_POST) ?></p>
+        <p>you are a <?= htmlspecialhars ($_POST['os'])?> that likes to listen to their tunes the <?= htmlspecialhars ($_POST['music'])?> way </p>
+        <p>your favourite phone manufacturer is <?= htmlspecialhars ($_POST['manufacturer'])?></p>
     </body>
 </html>
