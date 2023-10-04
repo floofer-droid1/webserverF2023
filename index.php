@@ -1,4 +1,4 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <html>
     <head>
         <title>lab 5: first php page</title>
