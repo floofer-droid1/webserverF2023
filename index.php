@@ -22,9 +22,9 @@
             <p> what beans do you use?</p>
             <?php
                 foreach($result as $row)
-                {
-                    echo "<input type=\"radio\" id="{$row['bean_type']}" name=\"bean_type\" value=\"{$row['bean_type']}\">";
-                    echo "<label for="{$row['bean_type']}">{$row['bean_type']}</label>\n";
+                {  
+                    echo "<input type=\"radio\" id=\"{$row['bean_type']}\" name=\"bean_type\" value=\"{$row['bean_type']}\">";
+                    echo "<label for=\"{$row['bean_type']}\">{$row['bean_type']}</label>\n";
                 }
             ?>
 <!--
