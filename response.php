@@ -4,8 +4,9 @@
         <title>php response</title>
     </head>
     <body>
-        <p>you are a <?= htmlspecialchars ($_POST["os"])?> user </p>
-        <p>that likes to listen to their tunes the <?= htmlspecialchars ($_POST["music"])?> way </p>
-        <p>your favourite phone manufacturer is <?= htmlspecialchars ($_POST["manufacturer"])?></p>
+        <p>you use <?= htmlspecialchars ($_POST["bean_type"])?> beans </p>
+        <p>you grind them to a  <?= htmlspecialchars ($_POST["ground_type"])?> consistency </p>
+        <p>and you brew it by <?= htmlspecialchars ($_POST["brew_type"])?> </p>
+        
     </body>
 </html>
