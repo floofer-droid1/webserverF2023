@@ -27,9 +27,12 @@
         <?php
             $sql = "INSERT INTO coffee_consumption_ways (bean_type, ground_type, brew_type) VALUES ('$beans', '$grinds', '$method')";
             echo "here's how other people brew their coffee";
+            echo "\n";
             echo "id:   |   grind size     |    brew type ";
             foreach($result as $row) {
+                echo "\n";
                 echo "id:{$row["brew_id"]} | {$row["ground_type"]}  | {$row["brew_type"]}";
+                echo "\n";
             }
             mysqli_close($conn);
         ?>
