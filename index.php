@@ -9,7 +9,7 @@
                 $database = "coffee_stuff";
                 $conn = mysqli_connect($server, $username, $password, $database);
                 // check for successful connection
-                if (!conn) {
+                if (!$conn) {
                     die("connection failed: {mysqli_connect_error() }");
                 }
                 $sql = "select * from coffee_consumption_ways;";
@@ -23,7 +23,7 @@
             <?php
                 foreach($result as $row)
                 {
-                    echo "<input type="radio" id="{$row['bean_type']}" name="bean_type" value="{$row['bean_type']}">";
+                    echo "<input type=\"radio\" id="{$row['bean_type']}" name=\"bean_type\" value=\"{$row['bean_type']}\">";
                     echo "<label for="{$row['bean_type']}">{$row['bean_type']}</label>\n";
                 }
             ?>
