@@ -27,6 +27,8 @@
                     echo "<label for=\"{$row['bean_type']}\">{$row['bean_type']}</label>\n";
                 }
             ?>
+            <p>how do you brew your grounds?</p>
+            <p><label for="brew_type">How do you brew it? </label><input type="text" id="brew_type" name="brew_type" /></p>
 <!--
             <input type="radio" id="arabica" name="bean_type" value="arabica"> <label for="arabica">Arabica</label>
             <input type="radio" id="robusta" name="bean_type" value="robusta"> <label for="robusta">Robusta</label>
@@ -46,8 +48,6 @@
                 <option value="fine">fine</option>
                 <option value="extra_fine">extra fine</option>
 -->
-            <p>how do you brew your grounds?</p>
-            <p><label for="brew_type">How do you brew it? </label><input type="text" id="brew_type" name="brew_type" /></p>
             </br>
             <p><input type="submit" /></p>
         </form>
