@@ -28,12 +28,12 @@
             $sql = "INSERT INTO coffee_consumption_ways (bean_type, ground_type, brew_type) VALUES ('$beans', '$grinds', '$method')";
             $result1 = mysqli_query($conn, $sql);
             echo "here's how other people brew their coffee";
-            echo "nl2br()";
+            echo "<br />";
             echo "id:   |   grind size     |    brew type ";
             foreach($result as $row) {
-                echo "nl2br()";
+                echo "<br />";
                 echo "id:{$row["brew_id"]} | {$row["ground_type"]}  | {$row["brew_type"]}";
-                echo "nl2br()";
+                echo "<br />";
             }
             mysqli_close($conn);
         ?>
