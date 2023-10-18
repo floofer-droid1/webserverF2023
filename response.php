@@ -14,14 +14,18 @@
                 }
                 $sql = "select * from coffee_consumption_ways;";
                 $result = mysqli_query($conn, $sql);
+
+                $beans = htmlspecialchars ($_POST["bean_type"]);
+                $grinds = htmlspecialchars ($_POST["ground_type"]);
+                $method = htmlspecialchars ($_POST["brew_type"]);
         ?>
     </head>
     <body>
-        <p>you use <?= htmlspecialchars ($_POST["bean_type"])?> beans </p>
-        <p>you grind them to a  <?= htmlspecialchars ($_POST["ground_type"])?> consistency </p>
-        <p>and you brew it by <?= htmlspecialchars ($_POST["brew_type"])?> </p>
+        <p>you use <?= $beans; ?> beans </p>
+        <p>you grind them to a  <?= $grinds;?> consistency </p>
+        <p>and you brew it by <?= $method; ?> </p>
         <?php
-            $sql = "INSERT INTO coffee_consumption_ways (bean_type, ground_type, brew_type) VALUES ('htmlspecialchars ($_POST["bean_type"])', 'htmlspecialchars ($_POST["ground_type"])', 'htmlspecialchars ($_POST["brew_type"])')";
+            $sql = "INSERT INTO coffee_consumption_ways (bean_type, ground_type, brew_type) VALUES ('$beans', '$grinds', '$method')";
             echo "here's how other people brew their coffee";
             echo "id:   |   grind size     |    brew type ";
             foreach($result as $row) {
