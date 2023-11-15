@@ -9,6 +9,7 @@
         <input type="radio" id="led_off" name="led_status" value="0"> <label for="led_off">led is off</label>
         <p> set the LED to 1 </p>
         <input type="radio" id="led_off" name="led_status" value="1"> <label for="led_on">led is on</label>
+        <p> press 'submit' to get altitude, pressure and temperature </p> 
         <p><input type="submit" /></p>
     </body>
 </html>
