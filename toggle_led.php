@@ -6,9 +6,9 @@
     <body>
         <form action="led_response.php" method="POST">
         <p> set the LED to 0 </p>
-        <input type="radio" id="led_off" name="led_status" value="led_off"> <label for="led_off">led is off</label>
+        <input type="radio" id="led_off" name="led_status" value="0"> <label for="led_off">led is off</label>
         <p> set the LED to 1 </p>
-        <input type="radio" id="led_off" name="led_status" value="led_on"> <label for="led_on">led is on</label>
+        <input type="radio" id="led_off" name="led_status" value="1"> <label for="led_on">led is on</label>
         <p><input type="submit" /></p>
     </body>
 </html>
