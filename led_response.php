@@ -7,9 +7,9 @@
 
             $raw = `./bme280`;
             $deserialized = json_decode($raw, true);
-            $temp = echo $deserialized["temperature"];
-            $pressure = echo $deserialized["pressure"];
-            $altitude = echo $deserialized["altitude"];
+            $temp =  $deserialized["temperature"];
+            $pressure = $deserialized["pressure"];
+            $altitude = $deserialized["altitude"];
         ?>
     </head>
     <body>
@@ -20,8 +20,8 @@
             $output = `gpio write 7 $led`;
         ?>
 -->
-        <p>temperature is  <?= $temp; ?> degrees celsius</p>
+        <p>temperature is  <?= $temp;?> degrees celsius</p>
         <p>pressure is <?= $pressure;?> </p>
-        <p>altitude is <?= $altitude; ?> </p>
+        <p>altitude is <?= $altitude;?> </p>
     </body>
 </html>
