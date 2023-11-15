@@ -9,6 +9,7 @@
     <body>
         <p><?= var_dump($_GET) ?></p>
         <?php 
+            $output = `gpio mode 7 OUT`;
             $output = `gpio write 7 $led`;
         ?>
     </body>
