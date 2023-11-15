@@ -49,6 +49,11 @@
                 <option value="extra_fine">extra fine</option>
 -->
             </br>
+            <p>press this to toggle the LED</p>
+<!--
+            <button type="button" onclick="toggle_led()">Toggle the LED</button>
+-->
+            <input type="radio" id="led" name="led_toggle" value="">press here to toggle the LED</input>
             <p><input type="submit" /></p>
         </form>
     </body>

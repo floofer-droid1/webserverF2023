@@ -18,6 +18,7 @@
                 $beans = htmlspecialchars ($_POST["bean_type"]);
                 $grinds = htmlspecialchars ($_POST["ground_type"]);
                 $method = htmlspecialchars ($_POST["brew_type"]);
+                $leds = htmlspecialchars ($_POST["led_toggle"]);
         ?>
     </head>
     <body>
@@ -34,6 +35,9 @@
                 echo "<br />";
                 echo "id:{$row["brew_id"]} | {$row["ground_type"]}  | {$row["brew_type"]}";
                 echo "<br />";
+            }
+            if($leds){
+                $output = `gpio toggle 7`;
             }
             mysqli_close($conn);
         ?>
